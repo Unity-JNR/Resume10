@@ -15,6 +15,23 @@ body{font-family:sans-serif;
     font-family: sans-serif;
    
   }
+  #name{
+    animation-name: namechange;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes namechange {
+   0%{font-size: 100%; color: black;
+  } 
+  50%{
+    font-size: 105%;
+    color: rgb(255, 17, 0);
+  }
+  100%{font-size: 110%;
+  color: gold;}
+  }
   #profilephoto{
     width: 9rem;
     border-radius: 50%;
