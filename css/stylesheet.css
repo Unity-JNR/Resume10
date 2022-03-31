@@ -67,13 +67,16 @@ body{font-family:sans-serif;
     margin: 0.5rem;
     height: 9.5rem;
     mix-blend-mode: multiply;
-  }
-footer{
-  background-color: rgb(206, 255, 255);
-  text-align: center;
-  border: 5rem;
 
-}  
+  }
+  footer{
+    background-color: rgb(206, 255, 255);
+    text-align: center;
+    border: 5rem;
+  }
+
+
+
 
 @media only screen and (min-width: 768px) {
   .con{ background-color: green; }
@@ -109,5 +112,7 @@ footer{
 #content{
   grid-area: sd;
 }
+
+
 
 
