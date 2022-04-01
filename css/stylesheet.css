@@ -1,7 +1,7 @@
 body{font-family:sans-serif;
   font-size: 110%;
   background-color: cornflowerblue; 
-  
+
   }
   
   a:hover{color: whitesmoke;}
@@ -37,6 +37,17 @@ body{font-family:sans-serif;
     border-radius: 50%;
     height: 9rem;
     border: 3px solid blue;
+    animation-name: picmove;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+  }
+
+  @keyframes picmove {
+0%{border: 3px solid blue;}
+50%{border: 4px solid red;}
+100%{border: 5px solid violet;}
   }
   
   .main{
