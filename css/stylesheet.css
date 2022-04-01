@@ -21,7 +21,7 @@ body{font-family:sans-serif;
     animation-direction: alternate;
     animation-iteration-count: infinite;
   }
-
+/* adds animation changing name to different color */
   @keyframes namechange {
    0%{font-size: 100%; color: black;
   } 
@@ -43,7 +43,7 @@ body{font-family:sans-serif;
     animation-iteration-count: infinite;
     
   }
-
+/* adds animation changing border to different colours and sizes */
   @keyframes picmove {
 0%{border: 3px solid blue;}
 50%{border: 4px solid red;}
@@ -57,22 +57,10 @@ body{font-family:sans-serif;
     text-align: justify;
     margin-left: auto;
    
-    
-  
   }
   
-  #sidebar{
-    width: 20%;
-    background-color: lightblue;
-    padding: 0.5rem;
-    color: black;
-  }
-  .nav{
-    list-style-type: none;
-    padding: 0%;
-    display: flex;
-    flex-direction: column;
-  }
+  
+  
   .icons{
     width: 9.5rem;
     margin: 0.5rem;
@@ -88,7 +76,7 @@ body{font-family:sans-serif;
 
 
 
-
+/* media allows for the chnage is website for different screens  */
 @media only screen and (min-width: 768px) {
   .con{ background-color: green; }
 } 
