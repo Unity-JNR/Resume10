@@ -49,13 +49,6 @@
       </div>
 
 
- <style>
-   /* adds blue image to the background  */
-   
-  body{
-    background-image: url(images/blue.png);
-  }
- </style>
 
 
 
@@ -114,8 +107,62 @@
     <footer>
     <!-- clicking on the image opens to the website of that image -->
     <h2  id="Contact-details">Contact-details</h2>
-    <a  href="https://www.linkedin.com/feed/"  target="_blank" ><img class = "icons"src="images/linkedin.png" alt="picture of linkedin" ></a>
-    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> <img class = "icons" src="images/gmail.jpg" alt="image of gmail"></a>
+    <a  href="https://www.linkedin.com/feed/"  target="_blank"  data-toggle="modal" data-target="#link-modal" ><img class = "icons"src="images/linkedin.png" alt="picture of linkedin" ></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"  data-toggle="modal" data-target="#gmail-modal"> <img class = "icons" src="images/gmail.jpg" alt="image of gmail"></a>
+  
+  <section id="contact">
+    <div class="container-lg">
+     <div class="text-center">
+       <h2>Get in touch</h2>
+       <p class="lead">
+         Questions to ask? fill out the form to contact me directly...
+       </p>
+
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+          <form >
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="e.g.unitydemas12@gmail.com" required>
+            
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="e.g unity" >
+
+            <label for="subject" class="form-label"> what is your query about</label>
+              <select class="form-select" id="subject">
+                <option value="other" selected>other query</option>
+                <option value="experience" selected>Experience query</option>
+                <option value="skills" selected>skills query</option>
+                <option value="select" selected>select query</option>
+              </select>
+
+              
+              <div class="form-floating mb-4 mt-5">
+                <textarea  id="query" class="form-control"></textarea>
+                <label for="query" >your query</label>
+
+              </div>
+
+              <div class="mb-4 text-center">
+                <button type="submit" class="btn btn-secondary">Submit</button>
+              </div>
+             
+
+
+            
+          </form>
+        </div>
+      </div> 
+  
+
+
+
+
+
+     </div>  
+    </div>
+  </section>
+  
+  
   </footer>    
 
 
@@ -150,6 +197,70 @@
     </div>
   </div>
 </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="modal fade" id="gmail-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+            <h1>
+              Warning
+            </h1>
+          </div>
+         <div class="modal-body">
+           Are you sure you wanna leave this page?
+         </div>
+         <div class="modal-footer">
+           <input class="btn btn-primary" data-dismiss="modal"  value="close"> 
+          <button class="btn btn-primary small bg-light">
+          
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"> <p>Open</p></a>
+           
+          </button>
+
+         </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="modal fade" id="link-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+          <div class="modal-header">
+            <h1>
+              Warning
+            </h1>
+          </div>
+         <div class="modal-body">
+           Are you sure you wanna leave this page?
+         </div>
+         <div class="modal-footer">
+           <input class="btn btn-primary" data-dismiss="modal"  value="close"> 
+          <button class="btn btn-primary small bg-light">
+          
+            <a  href="https://www.linkedin.com/feed/"  target="_blank" ><p>Open</p></a>
+           
+          </button>
+
+         </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 

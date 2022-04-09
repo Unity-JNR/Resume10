@@ -1,6 +1,8 @@
 body{font-family:sans-serif;
   font-size: 110%;
-  background-color: cornflowerblue; 
+  background-color: cornflowerblue;
+   /* adds blue image to the background  */
+  background-image: url(../images/blue.png); 
 
   }
   
@@ -123,6 +125,10 @@ body{font-family:sans-serif;
 }
 #content{
   grid-area: sd;
+}
+
+textarea{
+  height: 140px;
 }
 
 
